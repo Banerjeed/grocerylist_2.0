@@ -15,24 +15,46 @@ def remove_item(R_item):
 	else:
 		return groceries.remove(R_item)
 
+def menu():
+	print "0- Main Menu"
+	print "1- Show Current List"
+	print "2- Add an Item to your Shopping list"
+	print "3- If you want to exit the program"
+	option = raw_input("Choose an option from the menu:")
+
 
 def main():
-	answer = raw_input("Hello! Enter 1 if you want to add something to your list; Enter 2 if you want to deleate something from your list; Enter 3 if you want to see your current list")
+	menu():
+	if option == "0":
+		while (True)
+			menu()
+	elif option == "1":
+		while (True):
+			print groceries 
+	elif option == "2": 
+		while (True):
+			answer2 = raw_input("Please enter the item you would like to add")
+			groceries.append(answer2)
+	else: 
+
+
+
+# 	answer = raw_input("Hello! Enter 1 if you want to add something to your list; Enter 2 if you want to deleate something from your list; Enter 3 if you want to see your current list")
 	
-	if answer == "1":
-		answer2 = raw_input("Please enter the item you would like to add")
-		add_list(answer2)
-		main()
+# 	if answer == "1":
+# 		answer2 = raw_input("Please enter the item you would like to add")
+# 		add_list(answer2)
+# 		main()
 
-	elif answer == "2":
-		answer3 = raw_input("Please enter item to remove")
-		groceries.remove(answer3)
-		main()
+# 	elif answer == "2":
+# 		answer3 = raw_input("Please enter item to remove")
+# 		groceries.remove(answer3)
+# 		main()
 
-	else:
-		print groceries
-		main()
+# 	else:
+# 		print groceries
+# 		main()
 
 
-if __name__ == "__main__":
-	main()
+# if __name__ == "__main__":
+# 	main()
